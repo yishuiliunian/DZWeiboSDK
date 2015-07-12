@@ -19,17 +19,15 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "stonedong" => "yishuiliunian@gmail.com" }
   s.source           = { :git => "https://github.com/yishuiliunian/DZWeiboSDK.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/libWeiboSDK/*.{h,m}'
   s.resource_bundles = {
-    'DZWeiboSDK' => ['Pod/Assets/*.png']
+    'DZWeiboSDK' => ['Pod/libWeiboSDK/WeiboSDK.bundle']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_libraries  = 'Pod/libWeiboSDK/libWeiboSDK.a'
+  s.frameworks   = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics'
+  s.libraries = 'sqlite3', 'z'
 end

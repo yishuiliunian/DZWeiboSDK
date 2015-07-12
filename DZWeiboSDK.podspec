@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
     'DZWeiboSDK' => ['Pod/Assets/*.*']
   }
   s.vendored_libraries  = 'Pod/Classes/libWeiboSDK.a'
-  s.frameworks   = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics'
+  s.frameworks   = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics', 'CoreTelephony'
   s.libraries = 'sqlite3', 'z'
 end

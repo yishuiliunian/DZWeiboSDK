@@ -1,6 +1,0 @@
-framework module DZWeiboSDK {
-  umbrella header "Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

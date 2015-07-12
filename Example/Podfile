@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DZWeiboSDK_Example', :exclusive => true do
+  pod "DZWeiboSDK", :path => "../"
+end
+
+target 'DZWeiboSDK_Tests', :exclusive => true do
+  pod "DZWeiboSDK", :path => "../"
+
+  
+end

@@ -1,5 +1,5 @@
 PODS:
-  - DZWeiboSDK (0.1.0)
+  - DZWeiboSDK (3.1.1)
 
 DEPENDENCIES:
   - DZWeiboSDK (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DZWeiboSDK: 3fc270bf7465c079a445065886ad9331fd7457d5
+  DZWeiboSDK: d3b3128b44dfe5d1a34cb46cdd558a48f3ddfc10
 
 COCOAPODS: 0.37.2

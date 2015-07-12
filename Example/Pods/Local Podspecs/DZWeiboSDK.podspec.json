@@ -1,25 +1,40 @@
 {
   "name": "DZWeiboSDK",
-  "version": "0.1.0",
-  "summary": "A short description of DZWeiboSDK.",
-  "description": "                       An optional longer description of DZWeiboSDK\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DZWeiboSDK",
+  "version": "3.1.1",
+  "summary": "新浪微博的SDK，方便维护",
+  "description": "                        新浪微博的SDK，方便维护\n",
+  "homepage": "https://github.com/yishuiliunian/DZWeiboSDK",
   "license": "MIT",
   "authors": {
     "stonedong": "yishuiliunian@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DZWeiboSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/yishuiliunian/DZWeiboSDK.git",
+    "tag": "3.1.1"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "6.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "DZWeiboSDK": [
-      "Pod/Assets/*.png"
+      "Pod/Assets/*.*"
     ]
-  }
+  },
+  "vendored_libraries": "Pod/Classes/libWeiboSDK.a",
+  "frameworks": [
+    "ImageIO",
+    "SystemConfiguration",
+    "CoreText",
+    "QuartzCore",
+    "Security",
+    "UIKit",
+    "Foundation",
+    "CoreGraphics"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ]
 }

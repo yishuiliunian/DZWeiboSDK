@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/libWeiboSDK/*.{h,m}'
+  s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'DZWeiboSDK' => ['Pod/libWeiboSDK/WeiboSDK.bundle']
+    'DZWeiboSDK' => ['Pod/Assets/*.*']
   }
-  s.vendored_libraries  = 'Pod/libWeiboSDK/libWeiboSDK.a'
+  s.vendored_libraries  = 'Pod/Classes/libWeiboSDK.a'
   s.frameworks   = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics'
   s.libraries = 'sqlite3', 'z'
 end

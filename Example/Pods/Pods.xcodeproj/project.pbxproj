@@ -7,377 +7,573 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		058E37A6C7EF512EF41BC3F8 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 52533A502C5708B61E703EF8 /* ReplaceMe.m */; };
-		09747E8A9B9E60E5999EA9DC /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25884A7B9AAA76B495F35796 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m */; };
-		1D9E92F45796EA2E9B63291C /* Pods-DZWeiboSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F3333AB026688A4B8B67AC /* Pods-DZWeiboSDK_Tests-dummy.m */; };
-		243735E722C4FA45DE2CEF45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA6AD437B636270E01B8DB /* Foundation.framework */; };
-		3AFB8510A4F14DC515989A9E /* Pods-DZWeiboSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFFFB707D48422F02A231A /* Pods-DZWeiboSDK_Example-dummy.m */; };
-		57B2DDDB68C5DD6D1FAC0941 /* Pods-DZWeiboSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C558F3DA071C7A68CBB5393 /* Pods-DZWeiboSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80962C27DE8B93303D7C50F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA6AD437B636270E01B8DB /* Foundation.framework */; };
-		9D664498206669B0A98C4753 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7ED3BE43DCDBF94B2E5276E /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEBFEBFCF091E7F427E36DE2 /* Pods-DZWeiboSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A22372D7AF0D6886CF3B3BA /* Pods-DZWeiboSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDA632742A585C1D52AAF9CE /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FEA441C828D775D120A7DB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m */; };
-		CA2560A494BD07F06685FCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA6AD437B636270E01B8DB /* Foundation.framework */; };
-		CDD7D6D07B8026A574CE55A7 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA39DB3E4CB4B70D0BAA228 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1F3FA330084682D796D3E3F /* DZWeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB868F9C0625D9DBD13E94B1 /* DZWeiboSDK.bundle */; };
-		E65CEBF7BF37FFB395F7C58C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 52533A502C5708B61E703EF8 /* ReplaceMe.m */; };
-		F4B8E7DAFEE51FA9C8E784FB /* DZWeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04ABE081A2DBC72F1C623FF9 /* DZWeiboSDK.bundle */; };
-		F7FA753A2AD30E9013F18C79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA6AD437B636270E01B8DB /* Foundation.framework */; };
+		032B3DA91D5801EE255955BB /* WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 76587FC8FFA0D414DEF8D65C /* WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		041BC14596116F2A5D938BCF /* WBHttpRequest+WeiboShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 36456DF4FE884A8935484DF0 /* WBHttpRequest+WeiboShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1092F89DCBE2371111BE7CC8 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A13DB57DDB2B9010C14FA990 /* WBHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		124D26ACF335E50F66E5C7AE /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 137D8C9711FE430D6B1C9A0E /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		131C3A6F42236457EAAF5731 /* WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 76587FC8FFA0D414DEF8D65C /* WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18EABF20B7F196DD8BA3B12B /* libWeiboSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = BAB709D49AE01230039908DC /* libWeiboSDK.a */; };
+		1D2E36E670A8A2738C11B905 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 643CC35CCFB129D830C2B7FC /* WeiboSDK.bundle */; };
+		2E0451BE1261742F6E3ED46E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B0EFE15573DBE254FE7C2A /* Security.framework */; };
+		2F1C291EF9631200F4E0FEF7 /* Pods-DZWeiboSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80A221B88E6847341266FF /* Pods-DZWeiboSDK_Tests-dummy.m */; };
+		31B46CD7AB1DA48974FEEB32 /* WBHttpRequest+WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1E91B10E98FE709F1CA4F9 /* WBHttpRequest+WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A377A9AD1957B0C575BEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960AF8E276CD903E67603E8C /* Foundation.framework */; };
+		4B2ACA891DEFD18DF2BBC271 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A13DB57DDB2B9010C14FA990 /* WBHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B2C4EFD5283C6D57A1A22A6 /* WBHttpRequest+WeiboShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 36456DF4FE884A8935484DF0 /* WBHttpRequest+WeiboShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1711B52167900398325 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A13DB57DDB2B9010C14FA990 /* WBHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1721B52167900398325 /* WBHttpRequest+WeiboGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE70FC182F921F9A03A8004 /* WBHttpRequest+WeiboGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1731B52167900398325 /* WBHttpRequest+WeiboShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 36456DF4FE884A8935484DF0 /* WBHttpRequest+WeiboShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1741B52167900398325 /* WBHttpRequest+WeiboToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E737B69BBB3DE591637240 /* WBHttpRequest+WeiboToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1751B52167900398325 /* WBHttpRequest+WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1E91B10E98FE709F1CA4F9 /* WBHttpRequest+WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1761B52167900398325 /* WBSDKBasicButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A0123ED79881C78A80DED175 /* WBSDKBasicButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1771B52167900398325 /* WBSDKCommentButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD176A5817EC663C3A29B5 /* WBSDKCommentButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1781B52167900398325 /* WBSDKRelationshipButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F67A9D192CCA8001BC2C6D6 /* WBSDKRelationshipButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B1791B52167900398325 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 292E33385520B5A0E9C564AD /* WeiboSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B17A1B52167900398325 /* WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 76587FC8FFA0D414DEF8D65C /* WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68BB591081BE925FA51666D5 /* Pods-DZWeiboSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5187376FB04F987BB3EE0EC /* Pods-DZWeiboSDK_Example-dummy.m */; };
+		6987B7AE8873B97FC1426BCA /* WBSDKBasicButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A0123ED79881C78A80DED175 /* WBSDKBasicButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EF2F3226E267EF6C9F9D1A6 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 643CC35CCFB129D830C2B7FC /* WeiboSDK.bundle */; };
+		7077950C7225C271EBB57663 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6235F26C62C1FE9839A830 /* ImageIO.framework */; };
+		75461BCCAEE922DD5C5FB098 /* WBHttpRequest+WeiboGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE70FC182F921F9A03A8004 /* WBHttpRequest+WeiboGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7815C4E8809C78433B17B310 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B0EFE15573DBE254FE7C2A /* Security.framework */; };
+		7A5DC6933912DFC12E170A76 /* WBHttpRequest+WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1E91B10E98FE709F1CA4F9 /* WBHttpRequest+WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C3C7EA821FE9CA0BA96781A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA70E43FE7D6AB1CE324AB0 /* CoreGraphics.framework */; };
+		7C8FCF5CE4B99CA518DD0E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960AF8E276CD903E67603E8C /* Foundation.framework */; };
+		7CC7A32873ABE233BB8B39F1 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 292E33385520B5A0E9C564AD /* WeiboSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83B129E5AB16755CFF60F328 /* WBHttpRequest+WeiboGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE70FC182F921F9A03A8004 /* WBHttpRequest+WeiboGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A54E27CB61188EBB66B8056 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA70E43FE7D6AB1CE324AB0 /* CoreGraphics.framework */; };
+		933E807FEB3F2B0605CFF0B8 /* WBSDKRelationshipButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F67A9D192CCA8001BC2C6D6 /* WBSDKRelationshipButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A5BFBC1BC829FAB56E07F0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF153D5D495A4103AB21C8D /* CoreText.framework */; };
+		93E5555E3FBD118EE9331A95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1417DBBA1413E44EDDABAF69 /* UIKit.framework */; };
+		94DE3565FAC4306876DD5063 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1417DBBA1413E44EDDABAF69 /* UIKit.framework */; };
+		95E5376EF6B399FA0480159C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1F1A2CA78A08151044E29 /* QuartzCore.framework */; };
+		9A80D5CC7A4BC44F54B9CBBA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6235F26C62C1FE9839A830 /* ImageIO.framework */; };
+		9B8B60797C61F70DE5A6E20D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960AF8E276CD903E67603E8C /* Foundation.framework */; };
+		9C3FA738B6414FC99029BFDD /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800CA63C827539F87DAAAF1B /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m */; };
+		A48518B85A8AA9F241A1FD3E /* WBHttpRequest+WeiboToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E737B69BBB3DE591637240 /* WBHttpRequest+WeiboToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A49BC9CFB299410808CB89C0 /* libWeiboSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = BAB709D49AE01230039908DC /* libWeiboSDK.a */; };
+		A8671FFAA846D91B26162457 /* Pods-DZWeiboSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2AFE97E719059A9F133B29 /* Pods-DZWeiboSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9107DFDACBB90473530610F /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669CF289D0CD049583D566F /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m */; };
+		ADE9665F6CD4BE44ED24CEA2 /* WBSDKRelationshipButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F67A9D192CCA8001BC2C6D6 /* WBSDKRelationshipButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD5B9059574DC6465A1ADCD9 /* WBSDKBasicButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A0123ED79881C78A80DED175 /* WBSDKBasicButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C034C2F14BABBF42B59A1F00 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D11462751049D8248D093E3F /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C13E2AB369C1C4706CD90212 /* DZWeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBBD99A9FB42C43ADD5BCC87 /* DZWeiboSDK.bundle */; };
+		C2DB20D9400009D23B8BF8FF /* WBSDKCommentButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD176A5817EC663C3A29B5 /* WBSDKCommentButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C58833DF87F967027DEA0C8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960AF8E276CD903E67603E8C /* Foundation.framework */; };
+		C9083B5BCCD46A2522C3D318 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474E16EDAB2A4D6B53E22AFE /* SystemConfiguration.framework */; };
+		D108D0B97F4D57C9AEF7370A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474E16EDAB2A4D6B53E22AFE /* SystemConfiguration.framework */; };
+		D394B2BE8A22DF08BA0A7FAA /* WBSDKCommentButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD176A5817EC663C3A29B5 /* WBSDKCommentButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9D234524D4AAEBA7C166B87 /* WBHttpRequest+WeiboToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E737B69BBB3DE591637240 /* WBHttpRequest+WeiboToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6A71F30F560D9A2DE5743B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF153D5D495A4103AB21C8D /* CoreText.framework */; };
+		EFBC0FFB47AD6DB8845EB154 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1F1A2CA78A08151044E29 /* QuartzCore.framework */; };
+		F433E41318532E3273BC7B78 /* Pods-DZWeiboSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6E21E12FD150903C5E7EFB /* Pods-DZWeiboSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F555A984D7B79F50C3F28190 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 292E33385520B5A0E9C564AD /* WeiboSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD87F3CBB63AA4E96A9DF11 /* DZWeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F963B20C8E717937D5A7C4A /* DZWeiboSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0CC75C504ACAE97BEF049BA6 /* PBXContainerItemProxy */ = {
+		2EF7338DD6CE568CF88F2E4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 594B99CFEBE6954FCBC14D6E /* Project object */;
+			containerPortal = B220560F6934ABC3AFACC410 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7496D8B23E1A17451747BE8F;
-			remoteInfo = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
+			remoteGlobalIDString = 9E47F4B1A3A6F7D6B9B0ED96;
+			remoteInfo = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
 		};
-		45273C2365A82DFD956A4DB1 /* PBXContainerItemProxy */ = {
+		392DCDD1605BE499DD5048A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 594B99CFEBE6954FCBC14D6E /* Project object */;
+			containerPortal = B220560F6934ABC3AFACC410 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8932F3289F90462C92C092FB;
+			remoteGlobalIDString = D6CE25BA8A2A0C06ADCC7BA1;
 			remoteInfo = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK";
 		};
-		D84547F3B91F080C11F265B0 /* PBXContainerItemProxy */ = {
+		3AD734842D6E94C84EB93228 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 594B99CFEBE6954FCBC14D6E /* Project object */;
+			containerPortal = B220560F6934ABC3AFACC410 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 518B0B7EFEC1563A115913DB;
+			remoteGlobalIDString = 30C89DB7826BEA892B42C773;
 			remoteInfo = "Pods-DZWeiboSDK_Tests-DZWeiboSDK";
 		};
-		F650C3CB6318C38B676C8156 /* PBXContainerItemProxy */ = {
+		F49F09D2765E8D44ED21F5A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 594B99CFEBE6954FCBC14D6E /* Project object */;
+			containerPortal = B220560F6934ABC3AFACC410 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CEE408CA6C49B4A2B90378CE;
-			remoteInfo = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
+			remoteGlobalIDString = D965E1569F0283EA15265FAB;
+			remoteInfo = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04ABE081A2DBC72F1C623FF9 /* DZWeiboSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZWeiboSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DEFFFB707D48422F02A231A /* Pods-DZWeiboSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZWeiboSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		1B426B68A225E6F7A66708E6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1C558F3DA071C7A68CBB5393 /* Pods-DZWeiboSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		23A25837B7FB74A31092A987 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap"; sourceTree = "<group>"; };
-		25884A7B9AAA76B495F35796 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m"; sourceTree = "<group>"; };
-		2A22372D7AF0D6886CF3B3BA /* Pods-DZWeiboSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		384B4A6883027B06CDFD1DB7 /* Pods-DZWeiboSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Tests-resources.sh"; sourceTree = "<group>"; };
-		3861F4AEE7AC2140D64F3EB4 /* Pods-DZWeiboSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZWeiboSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4D496943B44D7B81E8317E63 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap"; sourceTree = "<group>"; };
-		52533A502C5708B61E703EF8 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
-		5EEED138856A348290FF2547 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK.xcconfig"; sourceTree = "<group>"; };
-		653EF8EDA6437F2EA81A1281 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig"; sourceTree = "<group>"; };
-		6AF1DDDCD8CB104A64548940 /* DZWeiboSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZWeiboSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CB6B5973DD9829AC474A954 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DE4F409B0DCF96C5FDD7838 /* Pods-DZWeiboSDK_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Tests-environment.h"; sourceTree = "<group>"; };
-		6FA7B0A9F60725211CA2A914 /* Pods-DZWeiboSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		712D8C45DEBFBB16DF1C43E6 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig"; sourceTree = "<group>"; };
-		725733570F3FB79741553D21 /* Pods_DZWeiboSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZWeiboSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E8D7F02396A06511C3E0EFD /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch"; sourceTree = "<group>"; };
-		8245350D2567E50FF730EFD3 /* Pods-DZWeiboSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZWeiboSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		890532BC43ED2B1449A44DDA /* Pods_DZWeiboSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZWeiboSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BD3DAFF654E7CBD4B4758C9 /* Pods-DZWeiboSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8E3FC95D9115B15894B48215 /* Pods-DZWeiboSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93F3333AB026688A4B8B67AC /* Pods-DZWeiboSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZWeiboSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		A5999D134109053CCC28F4D7 /* Pods-DZWeiboSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AB868F9C0625D9DBD13E94B1 /* DZWeiboSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZWeiboSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADA39DB3E4CB4B70D0BAA228 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h"; sourceTree = "<group>"; };
-		B38ECF0186EDD623FD2B5D98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Info.plist"; sourceTree = "<group>"; };
-		B6FEA441C828D775D120A7DB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m"; sourceTree = "<group>"; };
-		B7ED3BE43DCDBF94B2E5276E /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h"; sourceTree = "<group>"; };
-		B808FF835C47ACC0C54CDF8F /* Pods-DZWeiboSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZWeiboSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		BF427FD511881B89F1F1B3C2 /* Pods-DZWeiboSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C8F5152D82535E3C426BD5C5 /* DZWeiboSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZWeiboSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9FC953536CAACC414D7F1B5 /* Pods-DZWeiboSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZWeiboSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D04F6122B1789D98E7867291 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D31DC8D001A84EA4AED32D6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7C2A2FAD29028A1D59799B6 /* Pods-DZWeiboSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZWeiboSDK_Example.modulemap"; sourceTree = "<group>"; };
-		DCD09457548F1B79B3D09D9D /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig"; sourceTree = "<group>"; };
-		DDCBD78DC24D82C6C6E6ED13 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch"; sourceTree = "<group>"; };
-		E1840C556F4E27D18F4EDFF6 /* Pods-DZWeiboSDK_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-environment.h"; sourceTree = "<group>"; };
-		E3F48C9E2340B5DFCFCEC22B /* Pods-DZWeiboSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E5B5360FABE724EA9A3E5177 /* Pods-DZWeiboSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Example-resources.sh"; sourceTree = "<group>"; };
-		FAAA6AD437B636270E01B8DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FDC4067E60FB395020346021 /* Pods-DZWeiboSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZWeiboSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		054C1F44AAA96DF94C6182D7 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK.xcconfig"; sourceTree = "<group>"; };
+		09B1F1A2CA78A08151044E29 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		11EE9CEFE78C7CFDE7CF3C40 /* Pods-DZWeiboSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZWeiboSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		137D8C9711FE430D6B1C9A0E /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h"; sourceTree = "<group>"; };
+		1417DBBA1413E44EDDABAF69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1909CBEE1CDBFFAA46922228 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch"; sourceTree = "<group>"; };
+		1B80A221B88E6847341266FF /* Pods-DZWeiboSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZWeiboSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		20D69224749E648D0D978B9A /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap"; sourceTree = "<group>"; };
+		20E737B69BBB3DE591637240 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		2485388401D1DB2495898C9E /* Pods-DZWeiboSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZWeiboSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		292E33385520B5A0E9C564AD /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		2E1F361CFB1BE168766C0E27 /* Pods-DZWeiboSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Example-resources.sh"; sourceTree = "<group>"; };
+		2F67A9D192CCA8001BC2C6D6 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		2F963B20C8E717937D5A7C4A /* DZWeiboSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZWeiboSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		357BDD1996670B211C453476 /* Pods-DZWeiboSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Tests-resources.sh"; sourceTree = "<group>"; };
+		36456DF4FE884A8935484DF0 /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		3AA0F6A224823194BDDC0F91 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig"; sourceTree = "<group>"; };
+		3C1E91B10E98FE709F1CA4F9 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		459FF787347E8C0B246DFF05 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		474E16EDAB2A4D6B53E22AFE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4943CE07B9E5487C139F0BA7 /* Pods-DZWeiboSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZWeiboSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4FA70E43FE7D6AB1CE324AB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		560E7630DAC606A53C5AC77B /* Pods-DZWeiboSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		59501C319581181CDC46BF84 /* Pods-DZWeiboSDK_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-environment.h"; sourceTree = "<group>"; };
+		5FAD176A5817EC663C3A29B5 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		617B6E7DB6415CAE1CDB780F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D8645AD350D38D3B467B59 /* Pods_DZWeiboSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZWeiboSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643CC35CCFB129D830C2B7FC /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		6A0A9F9A54CFA04B4C28BE36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B0EFE15573DBE254FE7C2A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		76587FC8FFA0D414DEF8D65C /* WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		7CE70FC182F921F9A03A8004 /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		7D1978249302191176EF39F8 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig"; sourceTree = "<group>"; };
+		800CA63C827539F87DAAAF1B /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m"; sourceTree = "<group>"; };
+		81C735E6A683D020B38C96D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Info.plist"; sourceTree = "<group>"; };
+		86668475D84FE19AC00A14A4 /* Pods-DZWeiboSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8669CF289D0CD049583D566F /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m"; path = "../Pods-DZWeiboSDK_Tests-DZWeiboSDK/Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m"; sourceTree = "<group>"; };
+		89244C77AA4FB8556C6CBDC4 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap"; sourceTree = "<group>"; };
+		8B6E21E12FD150903C5E7EFB /* Pods-DZWeiboSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8C41BBD7649FF2493FB6C523 /* DZWeiboSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZWeiboSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960AF8E276CD903E67603E8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9B061415E38D90593E39345D /* Pods-DZWeiboSDK_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Tests-environment.h"; sourceTree = "<group>"; };
+		9C6235F26C62C1FE9839A830 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		9D3F347698F082EBA20AFC4B /* Pods-DZWeiboSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZWeiboSDK_Example.modulemap"; sourceTree = "<group>"; };
+		A0123ED79881C78A80DED175 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		A13DB57DDB2B9010C14FA990 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		ADCF7B70463D435D70808CD2 /* Pods-DZWeiboSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZWeiboSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		AE77EE807167AD1CAA069981 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig"; sourceTree = "<group>"; };
+		B34A3475A3E9356EAC9CD0B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B97BCB46A4669C8BDE0722 /* DZWeiboSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZWeiboSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB709D49AE01230039908DC /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		C0D21C1C6D3DED4584BDA0DA /* Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch"; sourceTree = "<group>"; };
+		C918F585F4E79DD39CAEC3FF /* Pods-DZWeiboSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF153D5D495A4103AB21C8D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		D11462751049D8248D093E3F /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h"; sourceTree = "<group>"; };
+		D5447BF9856B6B9692CDF12B /* Pods_DZWeiboSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZWeiboSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55A74D7DC383752A6ED2343 /* Pods-DZWeiboSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZWeiboSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6B7C0B941C20331A234D059 /* Pods-DZWeiboSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZWeiboSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DEA7B801C9D05AA0142FCBBB /* Pods-DZWeiboSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E5187376FB04F987BB3EE0EC /* Pods-DZWeiboSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZWeiboSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		EBBD99A9FB42C43ADD5BCC87 /* DZWeiboSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZWeiboSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2AFE97E719059A9F133B29 /* Pods-DZWeiboSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZWeiboSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		F0029313BDBDF997A7C6661A /* Pods-DZWeiboSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZWeiboSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C5BC467D7B121A7A0BF8D66 /* Frameworks */ = {
+		1D3AEF7172676B06288D7A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58833DF87F967027DEA0C8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		313D950EA6B28A3C88ECE7F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F87789512A30E36A930D4AB /* Frameworks */ = {
+		36E7CD8DE79DE6F1D8E125B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FA753A2AD30E9013F18C79 /* Foundation.framework in Frameworks */,
+				9B8B60797C61F70DE5A6E20D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2323B6E6B90A9E2EA433A8E6 /* Frameworks */ = {
+		52EB5BD983B79B02B056C7CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243735E722C4FA45DE2CEF45 /* Foundation.framework in Frameworks */,
+				7C3C7EA821FE9CA0BA96781A /* CoreGraphics.framework in Frameworks */,
+				93A5BFBC1BC829FAB56E07F0 /* CoreText.framework in Frameworks */,
+				4A377A9AD1957B0C575BEBA5 /* Foundation.framework in Frameworks */,
+				7077950C7225C271EBB57663 /* ImageIO.framework in Frameworks */,
+				95E5376EF6B399FA0480159C /* QuartzCore.framework in Frameworks */,
+				2E0451BE1261742F6E3ED46E /* Security.framework in Frameworks */,
+				C9083B5BCCD46A2522C3D318 /* SystemConfiguration.framework in Frameworks */,
+				94DE3565FAC4306876DD5063 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81E5852074484807665010B5 /* Frameworks */ = {
+		AD601F1FDC92E860286B1093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2560A494BD07F06685FCEC /* Foundation.framework in Frameworks */,
+				8A54E27CB61188EBB66B8056 /* CoreGraphics.framework in Frameworks */,
+				EC6A71F30F560D9A2DE5743B /* CoreText.framework in Frameworks */,
+				7C8FCF5CE4B99CA518DD0E76 /* Foundation.framework in Frameworks */,
+				9A80D5CC7A4BC44F54B9CBBA /* ImageIO.framework in Frameworks */,
+				EFBC0FFB47AD6DB8845EB154 /* QuartzCore.framework in Frameworks */,
+				7815C4E8809C78433B17B310 /* Security.framework in Frameworks */,
+				D108D0B97F4D57C9AEF7370A /* SystemConfiguration.framework in Frameworks */,
+				93E5555E3FBD118EE9331A95 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4ED3BD2EDB93FB6CA1DFE77 /* Frameworks */ = {
+		FCDBD5FA19B32145F3755F1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCBE995D787C9F37AC7EFBEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80962C27DE8B93303D7C50F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BD30EB7E4A61BB11E5B2155 = {
+		11DD3595CFDBB03DB6A82D09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B426B68A225E6F7A66708E6 /* Podfile */,
-				6CF0D39D859B3709526BEFAE /* Development Pods */,
-				7185E0119EB3BA541CB02B97 /* Frameworks */,
-				146772753ED840A71F9CAC4F /* Products */,
-				D4B79F1D9E88206760C6F8C4 /* Targets Support Files */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		146772753ED840A71F9CAC4F /* Products */ = {
+		12BF70A650778A4C17012FC5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				AB868F9C0625D9DBD13E94B1 /* DZWeiboSDK.bundle */,
-				04ABE081A2DBC72F1C623FF9 /* DZWeiboSDK.bundle */,
-				C8F5152D82535E3C426BD5C5 /* DZWeiboSDK.framework */,
-				6AF1DDDCD8CB104A64548940 /* DZWeiboSDK.framework */,
-				725733570F3FB79741553D21 /* Pods_DZWeiboSDK_Example.framework */,
-				890532BC43ED2B1449A44DDA /* Pods_DZWeiboSDK_Tests.framework */,
+				643CC35CCFB129D830C2B7FC /* WeiboSDK.bundle */,
 			);
-			name = Products;
+			path = Assets;
 			sourceTree = "<group>";
 		};
-		5A4978F36FF62669EDFA0704 /* Support Files */ = {
+		20C33628E7E83FA11789B201 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D04F6122B1789D98E7867291 /* Info.plist */,
-				B38ECF0186EDD623FD2B5D98 /* Info.plist */,
-				23A25837B7FB74A31092A987 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap */,
-				5EEED138856A348290FF2547 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.xcconfig */,
-				653EF8EDA6437F2EA81A1281 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */,
-				25884A7B9AAA76B495F35796 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m */,
-				DDCBD78DC24D82C6C6E6ED13 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch */,
-				B7ED3BE43DCDBF94B2E5276E /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h */,
-				4D496943B44D7B81E8317E63 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap */,
-				712D8C45DEBFBB16DF1C43E6 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig */,
-				DCD09457548F1B79B3D09D9D /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */,
-				B6FEA441C828D775D120A7DB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m */,
-				7E8D7F02396A06511C3E0EFD /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch */,
-				ADA39DB3E4CB4B70D0BAA228 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h */,
+				12BF70A650778A4C17012FC5 /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		2DCE084A3733EAC8E3580D8F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				617B6E7DB6415CAE1CDB780F /* Info.plist */,
+				81C735E6A683D020B38C96D4 /* Info.plist */,
+				89244C77AA4FB8556C6CBDC4 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap */,
+				054C1F44AAA96DF94C6182D7 /* Pods-DZWeiboSDK_Example-DZWeiboSDK.xcconfig */,
+				AE77EE807167AD1CAA069981 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */,
+				800CA63C827539F87DAAAF1B /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m */,
+				C0D21C1C6D3DED4584BDA0DA /* Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch */,
+				D11462751049D8248D093E3F /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h */,
+				20D69224749E648D0D978B9A /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.modulemap */,
+				7D1978249302191176EF39F8 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK.xcconfig */,
+				3AA0F6A224823194BDDC0F91 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */,
+				8669CF289D0CD049583D566F /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m */,
+				1909CBEE1CDBFFAA46922228 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-prefix.pch */,
+				137D8C9711FE430D6B1C9A0E /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK";
 			sourceTree = "<group>";
 		};
-		6CF0D39D859B3709526BEFAE /* Development Pods */ = {
+		2EF850F852C8610B106F53FA /* Pods-DZWeiboSDK_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D0F9BF082C759BA2CA085FDB /* DZWeiboSDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6DB5A00328EACFE0EFB8EBAE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9636332B5BBEC28EEABC4882 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		7185E0119EB3BA541CB02B97 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C98375C9321DDD67BC0EE601 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9636332B5BBEC28EEABC4882 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				52533A502C5708B61E703EF8 /* ReplaceMe.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		9D519604B6D6D050851621D1 /* Pods-DZWeiboSDK_Example */ = {
-			isa = PBXGroup;
-			children = (
-				D31DC8D001A84EA4AED32D6D /* Info.plist */,
-				D7C2A2FAD29028A1D59799B6 /* Pods-DZWeiboSDK_Example.modulemap */,
-				FDC4067E60FB395020346021 /* Pods-DZWeiboSDK_Example-acknowledgements.markdown */,
-				3861F4AEE7AC2140D64F3EB4 /* Pods-DZWeiboSDK_Example-acknowledgements.plist */,
-				0DEFFFB707D48422F02A231A /* Pods-DZWeiboSDK_Example-dummy.m */,
-				E1840C556F4E27D18F4EDFF6 /* Pods-DZWeiboSDK_Example-environment.h */,
-				A5999D134109053CCC28F4D7 /* Pods-DZWeiboSDK_Example-frameworks.sh */,
-				E5B5360FABE724EA9A3E5177 /* Pods-DZWeiboSDK_Example-resources.sh */,
-				2A22372D7AF0D6886CF3B3BA /* Pods-DZWeiboSDK_Example-umbrella.h */,
-				6FA7B0A9F60725211CA2A914 /* Pods-DZWeiboSDK_Example.debug.xcconfig */,
-				E3F48C9E2340B5DFCFCEC22B /* Pods-DZWeiboSDK_Example.release.xcconfig */,
-			);
-			name = "Pods-DZWeiboSDK_Example";
-			path = "Target Support Files/Pods-DZWeiboSDK_Example";
-			sourceTree = "<group>";
-		};
-		C46D61FEFB3D3C5A4403060C /* Pods-DZWeiboSDK_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6CB6B5973DD9829AC474A954 /* Info.plist */,
-				B808FF835C47ACC0C54CDF8F /* Pods-DZWeiboSDK_Tests.modulemap */,
-				C9FC953536CAACC414D7F1B5 /* Pods-DZWeiboSDK_Tests-acknowledgements.markdown */,
-				8245350D2567E50FF730EFD3 /* Pods-DZWeiboSDK_Tests-acknowledgements.plist */,
-				93F3333AB026688A4B8B67AC /* Pods-DZWeiboSDK_Tests-dummy.m */,
-				6DE4F409B0DCF96C5FDD7838 /* Pods-DZWeiboSDK_Tests-environment.h */,
-				8BD3DAFF654E7CBD4B4758C9 /* Pods-DZWeiboSDK_Tests-frameworks.sh */,
-				384B4A6883027B06CDFD1DB7 /* Pods-DZWeiboSDK_Tests-resources.sh */,
-				1C558F3DA071C7A68CBB5393 /* Pods-DZWeiboSDK_Tests-umbrella.h */,
-				BF427FD511881B89F1F1B3C2 /* Pods-DZWeiboSDK_Tests.debug.xcconfig */,
-				8E3FC95D9115B15894B48215 /* Pods-DZWeiboSDK_Tests.release.xcconfig */,
+				B34A3475A3E9356EAC9CD0B5 /* Info.plist */,
+				ADCF7B70463D435D70808CD2 /* Pods-DZWeiboSDK_Tests.modulemap */,
+				D55A74D7DC383752A6ED2343 /* Pods-DZWeiboSDK_Tests-acknowledgements.markdown */,
+				4943CE07B9E5487C139F0BA7 /* Pods-DZWeiboSDK_Tests-acknowledgements.plist */,
+				1B80A221B88E6847341266FF /* Pods-DZWeiboSDK_Tests-dummy.m */,
+				9B061415E38D90593E39345D /* Pods-DZWeiboSDK_Tests-environment.h */,
+				F0029313BDBDF997A7C6661A /* Pods-DZWeiboSDK_Tests-frameworks.sh */,
+				357BDD1996670B211C453476 /* Pods-DZWeiboSDK_Tests-resources.sh */,
+				8B6E21E12FD150903C5E7EFB /* Pods-DZWeiboSDK_Tests-umbrella.h */,
+				560E7630DAC606A53C5AC77B /* Pods-DZWeiboSDK_Tests.debug.xcconfig */,
+				D6B7C0B941C20331A234D059 /* Pods-DZWeiboSDK_Tests.release.xcconfig */,
 			);
 			name = "Pods-DZWeiboSDK_Tests";
 			path = "Target Support Files/Pods-DZWeiboSDK_Tests";
 			sourceTree = "<group>";
 		};
-		C98375C9321DDD67BC0EE601 /* iOS */ = {
+		3882FCB49F5A30F832DEAB6A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FAAA6AD437B636270E01B8DB /* Foundation.framework */,
+				BF02D0BDAE21BA40EF7870D7 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		58EF816636487691F0252866 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2BF73D5C34980B76F8A69AD /* Pods-DZWeiboSDK_Example */,
+				2EF850F852C8610B106F53FA /* Pods-DZWeiboSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		65C8E1132E7831DBD6D2EAC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20C33628E7E83FA11789B201 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A4D0B74506B57CE98C9CF93 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4339A9FE227EFB0D83C5383 /* DZWeiboSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8CAAA82A0DB2E783FA0EF9DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96950C53B0297B584602F894 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96950C53B0297B584602F894 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4FA70E43FE7D6AB1CE324AB0 /* CoreGraphics.framework */,
+				CAF153D5D495A4103AB21C8D /* CoreText.framework */,
+				960AF8E276CD903E67603E8C /* Foundation.framework */,
+				9C6235F26C62C1FE9839A830 /* ImageIO.framework */,
+				09B1F1A2CA78A08151044E29 /* QuartzCore.framework */,
+				72B0EFE15573DBE254FE7C2A /* Security.framework */,
+				474E16EDAB2A4D6B53E22AFE /* SystemConfiguration.framework */,
+				1417DBBA1413E44EDDABAF69 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D0F9BF082C759BA2CA085FDB /* DZWeiboSDK */ = {
+		9EB90E27C2CA919F4401A511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DB5A00328EACFE0EFB8EBAE /* Pod */,
-				5A4978F36FF62669EDFA0704 /* Support Files */,
+				2F963B20C8E717937D5A7C4A /* DZWeiboSDK.bundle */,
+				EBBD99A9FB42C43ADD5BCC87 /* DZWeiboSDK.bundle */,
+				B3B97BCB46A4669C8BDE0722 /* DZWeiboSDK.framework */,
+				8C41BBD7649FF2493FB6C523 /* DZWeiboSDK.framework */,
+				63D8645AD350D38D3B467B59 /* Pods_DZWeiboSDK_Example.framework */,
+				D5447BF9856B6B9692CDF12B /* Pods_DZWeiboSDK_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2BF73D5C34980B76F8A69AD /* Pods-DZWeiboSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A9F9A54CFA04B4C28BE36 /* Info.plist */,
+				9D3F347698F082EBA20AFC4B /* Pods-DZWeiboSDK_Example.modulemap */,
+				11EE9CEFE78C7CFDE7CF3C40 /* Pods-DZWeiboSDK_Example-acknowledgements.markdown */,
+				2485388401D1DB2495898C9E /* Pods-DZWeiboSDK_Example-acknowledgements.plist */,
+				E5187376FB04F987BB3EE0EC /* Pods-DZWeiboSDK_Example-dummy.m */,
+				59501C319581181CDC46BF84 /* Pods-DZWeiboSDK_Example-environment.h */,
+				DEA7B801C9D05AA0142FCBBB /* Pods-DZWeiboSDK_Example-frameworks.sh */,
+				2E1F361CFB1BE168766C0E27 /* Pods-DZWeiboSDK_Example-resources.sh */,
+				EE2AFE97E719059A9F133B29 /* Pods-DZWeiboSDK_Example-umbrella.h */,
+				C918F585F4E79DD39CAEC3FF /* Pods-DZWeiboSDK_Example.debug.xcconfig */,
+				86668475D84FE19AC00A14A4 /* Pods-DZWeiboSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-DZWeiboSDK_Example";
+			path = "Target Support Files/Pods-DZWeiboSDK_Example";
+			sourceTree = "<group>";
+		};
+		AA5CA2CD56FD420D90BAAAFA = {
+			isa = PBXGroup;
+			children = (
+				459FF787347E8C0B246DFF05 /* Podfile */,
+				7A4D0B74506B57CE98C9CF93 /* Development Pods */,
+				8CAAA82A0DB2E783FA0EF9DC /* Frameworks */,
+				9EB90E27C2CA919F4401A511 /* Products */,
+				58EF816636487691F0252866 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BF02D0BDAE21BA40EF7870D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A13DB57DDB2B9010C14FA990 /* WBHttpRequest.h */,
+				7CE70FC182F921F9A03A8004 /* WBHttpRequest+WeiboGame.h */,
+				36456DF4FE884A8935484DF0 /* WBHttpRequest+WeiboShare.h */,
+				20E737B69BBB3DE591637240 /* WBHttpRequest+WeiboToken.h */,
+				3C1E91B10E98FE709F1CA4F9 /* WBHttpRequest+WeiboUser.h */,
+				A0123ED79881C78A80DED175 /* WBSDKBasicButton.h */,
+				5FAD176A5817EC663C3A29B5 /* WBSDKCommentButton.h */,
+				2F67A9D192CCA8001BC2C6D6 /* WBSDKRelationshipButton.h */,
+				292E33385520B5A0E9C564AD /* WeiboSDK.h */,
+				76587FC8FFA0D414DEF8D65C /* WeiboUser.h */,
+				BAB709D49AE01230039908DC /* libWeiboSDK.a */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F4339A9FE227EFB0D83C5383 /* DZWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				11DD3595CFDBB03DB6A82D09 /* Frameworks */,
+				3882FCB49F5A30F832DEAB6A /* Pod */,
+				65C8E1132E7831DBD6D2EAC9 /* Resources */,
+				2DCE084A3733EAC8E3580D8F /* Support Files */,
 			);
 			name = DZWeiboSDK;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D4B79F1D9E88206760C6F8C4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9D519604B6D6D050851621D1 /* Pods-DZWeiboSDK_Example */,
-				C46D61FEFB3D3C5A4403060C /* Pods-DZWeiboSDK_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		149E6071E300797D3E0BACD4 /* Headers */ = {
+		04957889368FC00E9B0C05CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD7D6D07B8026A574CE55A7 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h in Headers */,
+				A8671FFAA846D91B26162457 /* Pods-DZWeiboSDK_Example-umbrella.h in Headers */,
+				6585B1711B52167900398325 /* WBHttpRequest.h in Headers */,
+				6585B1721B52167900398325 /* WBHttpRequest+WeiboGame.h in Headers */,
+				6585B1731B52167900398325 /* WBHttpRequest+WeiboShare.h in Headers */,
+				6585B1741B52167900398325 /* WBHttpRequest+WeiboToken.h in Headers */,
+				6585B1751B52167900398325 /* WBHttpRequest+WeiboUser.h in Headers */,
+				6585B1761B52167900398325 /* WBSDKBasicButton.h in Headers */,
+				6585B1771B52167900398325 /* WBSDKCommentButton.h in Headers */,
+				6585B1781B52167900398325 /* WBSDKRelationshipButton.h in Headers */,
+				6585B1791B52167900398325 /* WeiboSDK.h in Headers */,
+				6585B17A1B52167900398325 /* WeiboUser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E37BB1072CE6430E540D90B /* Headers */ = {
+		690BEC4DB5C6D3B46770E272 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D664498206669B0A98C4753 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h in Headers */,
+				F433E41318532E3273BC7B78 /* Pods-DZWeiboSDK_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8826534BB812E540A7B7EAEC /* Headers */ = {
+		7F6F36858C08FD3A1FE9EEED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBFEBFCF091E7F427E36DE2 /* Pods-DZWeiboSDK_Example-umbrella.h in Headers */,
+				C034C2F14BABBF42B59A1F00 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-umbrella.h in Headers */,
+				75461BCCAEE922DD5C5FB098 /* WBHttpRequest+WeiboGame.h in Headers */,
+				5B2C4EFD5283C6D57A1A22A6 /* WBHttpRequest+WeiboShare.h in Headers */,
+				A48518B85A8AA9F241A1FD3E /* WBHttpRequest+WeiboToken.h in Headers */,
+				31B46CD7AB1DA48974FEEB32 /* WBHttpRequest+WeiboUser.h in Headers */,
+				1092F89DCBE2371111BE7CC8 /* WBHttpRequest.h in Headers */,
+				BD5B9059574DC6465A1ADCD9 /* WBSDKBasicButton.h in Headers */,
+				D394B2BE8A22DF08BA0A7FAA /* WBSDKCommentButton.h in Headers */,
+				933E807FEB3F2B0605CFF0B8 /* WBSDKRelationshipButton.h in Headers */,
+				F555A984D7B79F50C3F28190 /* WeiboSDK.h in Headers */,
+				032B3DA91D5801EE255955BB /* WeiboUser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB41CCA5C4FE6903DB4C8097 /* Headers */ = {
+		FB43977BBBD2597BB86CBA81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B2DDDB68C5DD6D1FAC0941 /* Pods-DZWeiboSDK_Tests-umbrella.h in Headers */,
+				124D26ACF335E50F66E5C7AE /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-umbrella.h in Headers */,
+				83B129E5AB16755CFF60F328 /* WBHttpRequest+WeiboGame.h in Headers */,
+				041BC14596116F2A5D938BCF /* WBHttpRequest+WeiboShare.h in Headers */,
+				D9D234524D4AAEBA7C166B87 /* WBHttpRequest+WeiboToken.h in Headers */,
+				7A5DC6933912DFC12E170A76 /* WBHttpRequest+WeiboUser.h in Headers */,
+				4B2ACA891DEFD18DF2BBC271 /* WBHttpRequest.h in Headers */,
+				6987B7AE8873B97FC1426BCA /* WBSDKBasicButton.h in Headers */,
+				C2DB20D9400009D23B8BF8FF /* WBSDKCommentButton.h in Headers */,
+				ADE9665F6CD4BE44ED24CEA2 /* WBSDKRelationshipButton.h in Headers */,
+				7CC7A32873ABE233BB8B39F1 /* WeiboSDK.h in Headers */,
+				131C3A6F42236457EAAF5731 /* WeiboUser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		518B0B7EFEC1563A115913DB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK */ = {
+		2A3B0BCC61E429E8EB5B5064 /* Pods-DZWeiboSDK_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1F219283363F77B350BDC5E /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK" */;
+			buildConfigurationList = 1FFBF5D44997F5867832C18A /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests" */;
 			buildPhases = (
-				9E01D14E9B0BA9FB524B38D5 /* Sources */,
-				DCBE995D787C9F37AC7EFBEF /* Frameworks */,
-				1039622FBBD06200FD6FE607 /* Resources */,
-				149E6071E300797D3E0BACD4 /* Headers */,
+				1B1A500ECE0A9FB0BB712592 /* Sources */,
+				36E7CD8DE79DE6F1D8E125B9 /* Frameworks */,
+				690BEC4DB5C6D3B46770E272 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A81F45D93D4561FFCAC96CA /* PBXTargetDependency */,
+				5D9DF96AE012499B36F50AF2 /* PBXTargetDependency */,
+			);
+			name = "Pods-DZWeiboSDK_Tests";
+			productName = "Pods-DZWeiboSDK_Tests";
+			productReference = D5447BF9856B6B9692CDF12B /* Pods_DZWeiboSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30C89DB7826BEA892B42C773 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84D93B2BCF6242576420C4D /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK" */;
+			buildPhases = (
+				4C02CDECD30321C5F5215427 /* Sources */,
+				AD601F1FDC92E860286B1093 /* Frameworks */,
+				3A259E21B9426D01C9465022 /* Resources */,
+				FB43977BBBD2597BB86CBA81 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8604A9BBA3288328B36B67E3 /* PBXTargetDependency */,
 			);
 			name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK";
 			productName = "Pods-DZWeiboSDK_Tests-DZWeiboSDK";
-			productReference = 6AF1DDDCD8CB104A64548940 /* DZWeiboSDK.framework */;
+			productReference = 8C41BBD7649FF2493FB6C523 /* DZWeiboSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7496D8B23E1A17451747BE8F /* Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK */ = {
+		7A81E241DFA0CA76D12250BE /* Pods-DZWeiboSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A56262D5EA56ED76C7ECB40 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK" */;
+			buildConfigurationList = 624B494222B9A083E1D6E8DF /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example" */;
 			buildPhases = (
-				DDBE21C404B26DA46FA4ECCB /* Sources */,
-				B4ED3BD2EDB93FB6CA1DFE77 /* Frameworks */,
-				FB5D5B3E4874E227EFE0E7C5 /* Resources */,
+				98B41320AE90FC91E60615F7 /* Sources */,
+				1D3AEF7172676B06288D7A37 /* Frameworks */,
+				04957889368FC00E9B0C05CD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				15DEF08A91ED983B4D381172 /* PBXTargetDependency */,
 			);
-			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
-			productName = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
-			productReference = 04ABE081A2DBC72F1C623FF9 /* DZWeiboSDK.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = "Pods-DZWeiboSDK_Example";
+			productName = "Pods-DZWeiboSDK_Example";
+			productReference = 63D8645AD350D38D3B467B59 /* Pods_DZWeiboSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		8932F3289F90462C92C092FB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK */ = {
+		9E47F4B1A3A6F7D6B9B0ED96 /* Pods-DZWeiboSDK_Example-DZWeiboSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 763140972C1F12C3A890CE7E /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK" */;
+			buildConfigurationList = D29E5FE3B93CC7325AFBA653 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK" */;
 			buildPhases = (
-				8622323FEFE8995D56A3AD9D /* Sources */,
-				0C5BC467D7B121A7A0BF8D66 /* Frameworks */,
-				A2683685D7744D1447729685 /* Resources */,
+				625A7778CCF2286B9B759BDB /* Sources */,
+				52EB5BD983B79B02B056C7CE /* Frameworks */,
+				633DCD056B3C734559FB9B2B /* Resources */,
+				7F6F36858C08FD3A1FE9EEED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C04EBAB2C1A0CC6041FB836F /* PBXTargetDependency */,
+			);
+			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
+			productName = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
+			productReference = B3B97BCB46A4669C8BDE0722 /* DZWeiboSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6CE25BA8A2A0C06ADCC7BA1 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F13F6C4A41A16D9C401A42 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK" */;
+			buildPhases = (
+				63F9DDFA270D62F4B27C6812 /* Sources */,
+				313D950EA6B28A3C88ECE7F6 /* Frameworks */,
+				67E2EAA40A496A141ABA8FD9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -385,207 +581,198 @@
 			);
 			name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK";
 			productName = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK";
-			productReference = AB868F9C0625D9DBD13E94B1 /* DZWeiboSDK.bundle */;
+			productReference = 2F963B20C8E717937D5A7C4A /* DZWeiboSDK.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		A70B5F7678CF0C58A3B80A55 /* Pods-DZWeiboSDK_Tests */ = {
+		D965E1569F0283EA15265FAB /* Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15AF771FD935AB4C887750C6 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests" */;
+			buildConfigurationList = D739D58EAEB94548E4805E1E /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK" */;
 			buildPhases = (
-				BB32A01EDADAB248ED5AB21C /* Sources */,
-				2323B6E6B90A9E2EA433A8E6 /* Frameworks */,
-				AB41CCA5C4FE6903DB4C8097 /* Headers */,
+				595EA6B759ECBF2E1A9CA564 /* Sources */,
+				FCDBD5FA19B32145F3755F1E /* Frameworks */,
+				335E097773203B265D6B1FD5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B04BC1CE88FE24F0220A6766 /* PBXTargetDependency */,
 			);
-			name = "Pods-DZWeiboSDK_Tests";
-			productName = "Pods-DZWeiboSDK_Tests";
-			productReference = 890532BC43ED2B1449A44DDA /* Pods_DZWeiboSDK_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CEE408CA6C49B4A2B90378CE /* Pods-DZWeiboSDK_Example-DZWeiboSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C8124966502D426C5C63B74 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK" */;
-			buildPhases = (
-				01AC4EE7C7D6633A214734C7 /* Sources */,
-				1F87789512A30E36A930D4AB /* Frameworks */,
-				E88F9203C67A32F08301795D /* Resources */,
-				3E37BB1072CE6430E540D90B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				116373DB362E63FF427A1ED3 /* PBXTargetDependency */,
-			);
-			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
-			productName = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
-			productReference = C8F5152D82535E3C426BD5C5 /* DZWeiboSDK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F33499367AD41F11B220BB18 /* Pods-DZWeiboSDK_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 202FD16043D66D6126ADE40D /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example" */;
-			buildPhases = (
-				2BEDA3889AC26F8701E5166A /* Sources */,
-				81E5852074484807665010B5 /* Frameworks */,
-				8826534BB812E540A7B7EAEC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				23ECEAD7DA4A703A481B364C /* PBXTargetDependency */,
-			);
-			name = "Pods-DZWeiboSDK_Example";
-			productName = "Pods-DZWeiboSDK_Example";
-			productReference = 725733570F3FB79741553D21 /* Pods_DZWeiboSDK_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
+			productName = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
+			productReference = EBBD99A9FB42C43ADD5BCC87 /* DZWeiboSDK.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		594B99CFEBE6954FCBC14D6E /* Project object */ = {
+		B220560F6934ABC3AFACC410 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = D35C3F67200112198BE86749 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F14E6BF1691C5098793DCC58 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0BD30EB7E4A61BB11E5B2155;
-			productRefGroup = 146772753ED840A71F9CAC4F /* Products */;
+			mainGroup = AA5CA2CD56FD420D90BAAAFA;
+			productRefGroup = 9EB90E27C2CA919F4401A511 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F33499367AD41F11B220BB18 /* Pods-DZWeiboSDK_Example */,
-				CEE408CA6C49B4A2B90378CE /* Pods-DZWeiboSDK_Example-DZWeiboSDK */,
-				7496D8B23E1A17451747BE8F /* Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK */,
-				A70B5F7678CF0C58A3B80A55 /* Pods-DZWeiboSDK_Tests */,
-				518B0B7EFEC1563A115913DB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK */,
-				8932F3289F90462C92C092FB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK */,
+				7A81E241DFA0CA76D12250BE /* Pods-DZWeiboSDK_Example */,
+				9E47F4B1A3A6F7D6B9B0ED96 /* Pods-DZWeiboSDK_Example-DZWeiboSDK */,
+				D965E1569F0283EA15265FAB /* Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK */,
+				2A3B0BCC61E429E8EB5B5064 /* Pods-DZWeiboSDK_Tests */,
+				30C89DB7826BEA892B42C773 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK */,
+				D6CE25BA8A2A0C06ADCC7BA1 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1039622FBBD06200FD6FE607 /* Resources */ = {
+		335E097773203B265D6B1FD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F3FA330084682D796D3E3F /* DZWeiboSDK.bundle in Resources */,
+				1D2E36E670A8A2738C11B905 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2683685D7744D1447729685 /* Resources */ = {
+		3A259E21B9426D01C9465022 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD87F3CBB63AA4E96A9DF11 /* DZWeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E88F9203C67A32F08301795D /* Resources */ = {
+		633DCD056B3C734559FB9B2B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B8E7DAFEE51FA9C8E784FB /* DZWeiboSDK.bundle in Resources */,
+				C13E2AB369C1C4706CD90212 /* DZWeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB5D5B3E4874E227EFE0E7C5 /* Resources */ = {
+		67E2EAA40A496A141ABA8FD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF2F3226E267EF6C9F9D1A6 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01AC4EE7C7D6633A214734C7 /* Sources */ = {
+		1B1A500ECE0A9FB0BB712592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09747E8A9B9E60E5999EA9DC /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m in Sources */,
-				058E37A6C7EF512EF41BC3F8 /* ReplaceMe.m in Sources */,
+				2F1C291EF9631200F4E0FEF7 /* Pods-DZWeiboSDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BEDA3889AC26F8701E5166A /* Sources */ = {
+		4C02CDECD30321C5F5215427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFB8510A4F14DC515989A9E /* Pods-DZWeiboSDK_Example-dummy.m in Sources */,
+				A9107DFDACBB90473530610F /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m in Sources */,
+				A49BC9CFB299410808CB89C0 /* libWeiboSDK.a in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8622323FEFE8995D56A3AD9D /* Sources */ = {
+		595EA6B759ECBF2E1A9CA564 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E01D14E9B0BA9FB524B38D5 /* Sources */ = {
+		625A7778CCF2286B9B759BDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA632742A585C1D52AAF9CE /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-dummy.m in Sources */,
-				E65CEBF7BF37FFB395F7C58C /* ReplaceMe.m in Sources */,
+				9C3FA738B6414FC99029BFDD /* Pods-DZWeiboSDK_Example-DZWeiboSDK-dummy.m in Sources */,
+				18EABF20B7F196DD8BA3B12B /* libWeiboSDK.a in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB32A01EDADAB248ED5AB21C /* Sources */ = {
+		63F9DDFA270D62F4B27C6812 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D9E92F45796EA2E9B63291C /* Pods-DZWeiboSDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDBE21C404B26DA46FA4ECCB /* Sources */ = {
+		98B41320AE90FC91E60615F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BB591081BE925FA51666D5 /* Pods-DZWeiboSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		116373DB362E63FF427A1ED3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
-			target = 7496D8B23E1A17451747BE8F /* Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK */;
-			targetProxy = 0CC75C504ACAE97BEF049BA6 /* PBXContainerItemProxy */;
-		};
-		23ECEAD7DA4A703A481B364C /* PBXTargetDependency */ = {
+		15DEF08A91ED983B4D381172 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK";
-			target = CEE408CA6C49B4A2B90378CE /* Pods-DZWeiboSDK_Example-DZWeiboSDK */;
-			targetProxy = F650C3CB6318C38B676C8156 /* PBXContainerItemProxy */;
+			target = 9E47F4B1A3A6F7D6B9B0ED96 /* Pods-DZWeiboSDK_Example-DZWeiboSDK */;
+			targetProxy = 2EF7338DD6CE568CF88F2E4C /* PBXContainerItemProxy */;
 		};
-		8A81F45D93D4561FFCAC96CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK";
-			target = 8932F3289F90462C92C092FB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK */;
-			targetProxy = 45273C2365A82DFD956A4DB1 /* PBXContainerItemProxy */;
-		};
-		B04BC1CE88FE24F0220A6766 /* PBXTargetDependency */ = {
+		5D9DF96AE012499B36F50AF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK";
-			target = 518B0B7EFEC1563A115913DB /* Pods-DZWeiboSDK_Tests-DZWeiboSDK */;
-			targetProxy = D84547F3B91F080C11F265B0 /* PBXContainerItemProxy */;
+			target = 30C89DB7826BEA892B42C773 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK */;
+			targetProxy = 3AD734842D6E94C84EB93228 /* PBXContainerItemProxy */;
+		};
+		8604A9BBA3288328B36B67E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK";
+			target = D6CE25BA8A2A0C06ADCC7BA1 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK */;
+			targetProxy = 392DCDD1605BE499DD5048A2 /* PBXContainerItemProxy */;
+		};
+		C04EBAB2C1A0CC6041FB836F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK";
+			target = D965E1569F0283EA15265FAB /* Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK */;
+			targetProxy = F49F09D2765E8D44ED21F5A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		005E7CD2F9179E23B21E0CDB /* Debug */ = {
+		1DD329CC61078444883AF668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE77EE807167AD1CAA069981 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK/Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK/Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DZWeiboSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		375CCD9D49F1194C62B77AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -624,9 +811,9 @@
 			};
 			name = Debug;
 		};
-		026C449860AE8EF812ADE92C /* Release */ = {
+		38B35E9C8DA19E0888E8289E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 653EF8EDA6437F2EA81A1281 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
+			baseConfigurationReference = AE77EE807167AD1CAA069981 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -651,9 +838,9 @@
 			};
 			name = Release;
 		};
-		28A3237F05B908E5924570F8 /* Release */ = {
+		4C5791C757E9278705331D91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3F48C9E2340B5DFCFCEC22B /* Pods-DZWeiboSDK_Example.release.xcconfig */;
+			baseConfigurationReference = D6B7C0B941C20331A234D059 /* Pods-DZWeiboSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -662,16 +849,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Pods-DZWeiboSDK_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Tests/Pods-DZWeiboSDK_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DZWeiboSDK_Example;
+				PRODUCT_NAME = Pods_DZWeiboSDK_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,9 +867,9 @@
 			};
 			name = Release;
 		};
-		3441C121D437E16EE880AFCC /* Release */ = {
+		6BB40953EB296D038D0472CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD09457548F1B79B3D09D9D /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
+			baseConfigurationReference = 3AA0F6A224823194BDDC0F91 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -707,78 +894,9 @@
 			};
 			name = Release;
 		};
-		7F4AF752339E3D8518BA0091 /* Debug */ = {
+		7E1D3B61B11EEA02EEF4BCB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 653EF8EDA6437F2EA81A1281 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK/Pods-DZWeiboSDK_Example-DZWeiboSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Example-DZWeiboSDK/Pods-DZWeiboSDK_Example-DZWeiboSDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DZWeiboSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		81FCE499004986A060EDCBB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FA7B0A9F60725211CA2A914 /* Pods-DZWeiboSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Pods-DZWeiboSDK_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DZWeiboSDK_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		881648BD8F7C538AFE3AFCE5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 653EF8EDA6437F2EA81A1281 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DZWeiboSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		9021AE8C36DC2283C975770D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD09457548F1B79B3D09D9D /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
+			baseConfigurationReference = 3AA0F6A224823194BDDC0F91 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -803,22 +921,9 @@
 			};
 			name = Debug;
 		};
-		A50B5E8366F879DE1B926C0B /* Debug */ = {
+		9335458E29919C302955012C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 653EF8EDA6437F2EA81A1281 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DZWeiboSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		ADC2EB4D6FB61433448124D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF427FD511881B89F1F1B3C2 /* Pods-DZWeiboSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = 560E7630DAC606A53C5AC77B /* Pods-DZWeiboSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -845,7 +950,46 @@
 			};
 			name = Debug;
 		};
-		B3EF41831127864349DB26A4 /* Release */ = {
+		9AE099B6C60D7D812719994A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE77EE807167AD1CAA069981 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DZWeiboSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A94CC20120C0239EF1A32512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE77EE807167AD1CAA069981 /* Pods-DZWeiboSDK_Example-DZWeiboSDK-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DZWeiboSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A9D54DD07BE11C720C8C974C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA0F6A224823194BDDC0F91 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DZWeiboSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B6ED3052CA5090D88B5D2C52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -879,9 +1023,67 @@
 			};
 			name = Release;
 		};
-		BFC75ABFB067D3AA939B15C3 /* Debug */ = {
+		BD329000155CF27FE7F79242 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD09457548F1B79B3D09D9D /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
+			baseConfigurationReference = C918F585F4E79DD39CAEC3FF /* Pods-DZWeiboSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Pods-DZWeiboSDK_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DZWeiboSDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E48FBE82A0DDCE1AD4E81F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86668475D84FE19AC00A14A4 /* Pods-DZWeiboSDK_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Example/Pods-DZWeiboSDK_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DZWeiboSDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F259F976B95B6FB3B34E4E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA0F6A224823194BDDC0F91 /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -892,115 +1094,73 @@
 			};
 			name = Debug;
 		};
-		E7BACF137A9A64E9EB6DFC9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E3FC95D9115B15894B48215 /* Pods-DZWeiboSDK_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DZWeiboSDK_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZWeiboSDK_Tests/Pods-DZWeiboSDK_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DZWeiboSDK_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F14A79FB77696526E91939C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD09457548F1B79B3D09D9D /* Pods-DZWeiboSDK_Tests-DZWeiboSDK-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZWeiboSDK_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DZWeiboSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15AF771FD935AB4C887750C6 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests" */ = {
+		12F13F6C4A41A16D9C401A42 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADC2EB4D6FB61433448124D9 /* Debug */,
-				E7BACF137A9A64E9EB6DFC9F /* Release */,
+				F259F976B95B6FB3B34E4E5F /* Debug */,
+				A9D54DD07BE11C720C8C974C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A56262D5EA56ED76C7ECB40 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK" */ = {
+		1FFBF5D44997F5867832C18A /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A50B5E8366F879DE1B926C0B /* Debug */,
-				881648BD8F7C538AFE3AFCE5 /* Release */,
+				9335458E29919C302955012C /* Debug */,
+				4C5791C757E9278705331D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		202FD16043D66D6126ADE40D /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example" */ = {
+		624B494222B9A083E1D6E8DF /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81FCE499004986A060EDCBB3 /* Debug */,
-				28A3237F05B908E5924570F8 /* Release */,
+				BD329000155CF27FE7F79242 /* Debug */,
+				E48FBE82A0DDCE1AD4E81F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C8124966502D426C5C63B74 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK" */ = {
+		D29E5FE3B93CC7325AFBA653 /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F4AF752339E3D8518BA0091 /* Debug */,
-				026C449860AE8EF812ADE92C /* Release */,
+				1DD329CC61078444883AF668 /* Debug */,
+				38B35E9C8DA19E0888E8289E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		763140972C1F12C3A890CE7E /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK-DZWeiboSDK" */ = {
+		D739D58EAEB94548E4805E1E /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFC75ABFB067D3AA939B15C3 /* Debug */,
-				F14A79FB77696526E91939C8 /* Release */,
+				A94CC20120C0239EF1A32512 /* Debug */,
+				9AE099B6C60D7D812719994A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1F219283363F77B350BDC5E /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK" */ = {
+		F14E6BF1691C5098793DCC58 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9021AE8C36DC2283C975770D /* Debug */,
-				3441C121D437E16EE880AFCC /* Release */,
+				375CCD9D49F1194C62B77AA4 /* Debug */,
+				B6ED3052CA5090D88B5D2C52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D35C3F67200112198BE86749 /* Build configuration list for PBXProject "Pods" */ = {
+		F84D93B2BCF6242576420C4D /* Build configuration list for PBXNativeTarget "Pods-DZWeiboSDK_Tests-DZWeiboSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				005E7CD2F9179E23B21E0CDB /* Debug */,
-				B3EF41831127864349DB26A4 /* Release */,
+				7E1D3B61B11EEA02EEF4BCB3 /* Debug */,
+				6BB40953EB296D038D0472CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 594B99CFEBE6954FCBC14D6E /* Project object */;
+	rootObject = B220560F6934ABC3AFACC410 /* Project object */;
 }

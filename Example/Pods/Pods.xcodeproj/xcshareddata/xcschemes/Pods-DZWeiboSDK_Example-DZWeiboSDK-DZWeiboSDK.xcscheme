@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7496D8B23E1A17451747BE8F"
+               BlueprintIdentifier = "D965E1569F0283EA15265FAB"
                BuildableName = "DZWeiboSDK.bundle"
                BlueprintName = "Pods-DZWeiboSDK_Example-DZWeiboSDK-DZWeiboSDK"
                ReferencedContainer = "container:Pods.xcodeproj">

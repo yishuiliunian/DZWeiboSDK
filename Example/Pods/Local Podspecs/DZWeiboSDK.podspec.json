@@ -31,7 +31,8 @@
     "Security",
     "UIKit",
     "Foundation",
-    "CoreGraphics"
+    "CoreGraphics",
+    "CoreTelephony"
   ],
   "libraries": [
     "sqlite3",

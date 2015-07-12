@@ -1,0 +1,2 @@
+PODS_DZWEIBOSDK_EXAMPLE_DZWEIBOSDK_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/../../Pod/Classes"
+PODS_DZWEIBOSDK_EXAMPLE_DZWEIBOSDK_OTHER_LDFLAGS = -l"WeiboSDK" -l"sqlite3" -l"z" -framework "CoreGraphics" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "ImageIO" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"

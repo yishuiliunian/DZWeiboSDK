@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "3.1.1"
   s.summary          = "新浪微博的SDK，方便维护"
   s.description      = <<-DESC
-                        新浪微博的SDK，方便维护
+                        新浪微博的SDK，方便维护dddd
                        DESC
   s.homepage         = "https://github.com/yishuiliunian/DZWeiboSDK"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
